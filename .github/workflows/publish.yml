@@ -41,7 +41,6 @@ jobs:
 
       - name: Change paths
         run: |
-
           python3 change.py          
 
       - name: Push changes

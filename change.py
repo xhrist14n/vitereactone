@@ -1,5 +1,5 @@
 # Define the file path
-file_path = "build/index.html"
+file_path = "dist/index.html"
 
 # Open the file, read its content, and replace href="/"
 with open(file_path, "r", encoding="utf-8") as file:

@@ -45,14 +45,13 @@ jobs:
 
       - name: Push changes
         run: |
-          cat build/index.html
+          cat dist/index.html
 
           git config --global --add safe.directory $GITHUB_WORKSPACE
           git config --global user.email "xhrist14n@gmail.com"
           git config --global user.name "xhrist14n"
 
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          ##git push origin main
         env:
           GITHUB_TOKEN:       ${{ secrets.SECRET_GITHUB_TOKEN }}
           GITHUB_REPOSITORY:  ${{github.repository}}
